@@ -6,43 +6,83 @@
     <title>Kaktusy</title>
     <link href="bootstrap.css" rel="stylesheet">
 </head>
-<body>
+<body class="text-dark bg-info">
     <header>
-        <div class="container text-center bg-primary">
-            <h1>Kaktusy</h1>
+        <div class="container-fluid mb-3 pt-3 bg-primary">
+            <div class="row">
+                <div class="col-2">
+                    <nav class="bg-success">
+                        <h2 class="fw-light text-center text-dark">Menu</h2>
+                        <ul class="nav nav-pills flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#">Kaktusy</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#">Popis</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#">Zajímavosti</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#">Výskyt</a>
+                            </li>
+                          </ul>
+                    </nav>
+                </div>
+                <div class="col-10 text-center align-self-center">
+                    <h1 class="text-dark">Kaktusy</h1>
+                </div>
+            </div>
         </div>
     </header>
 
-    <section>
-        <article>
-            <h2>Popis</h2>
-            <img src="./images/druhy_kaktusu.jpg" alt="Druhy kaktusu">
-            <p>Kaktusy jsou vytrvalé rostliny s rozmanitým vzhledem.</p>
-            <p>Většina druhů má kulovitý až sloupovitý, nebo zploštělý a veliký stonek.</p>
-            <p>Stonek je na povrchu hrbolatý, žebernatý až křídlatý.</p>
-            <p>Většina druhů kaktusů je bezlistá a listy jsou přeměněny v trny.
-            <p>Některé kaktusy mají stromovitý vzrůst a mohou dosáhnou výšky až 15 metrů.</p>
-        </article>
-        <article>
-            <h2>Výskyt</h2>
-            <p>Kaktusy pocházejí výhradně z Ameriky a vyskytují se od Kanady až po jižní část Jižní Ameriky.</p>
-            <p>Největší počet druhů se vyskytuje v oblasti jihozápadu USA a severozápadu Mexika a také v jihoamerických Andách.</p>
-            <p>Rostou na mnoho různých oblastech od vyprahlých pouští až po tropické deštné lesy.</p>
-            <p>Největší počet je ovšem v suchých, polopouštních oblastech.</p>
-        </article>
-        <article>
-            <h2>Zajímavosti</h2>
-            <img src="./images/kaktusy.jpg" alt="Kaktusy">
-            <p>Kaktusy zahrnují asi 1900 druhů ve 127 rodech.</p>
-            <p>Největší květy osahují délky a šířky až 30 centimetrů.</p>
-            <p>Nejvyšší druhy sloupcovitých kaktusů mohou dosáhnout výšek až 20 metrů.</p>
-            <p>Nejmenší druh kaktusu dosahuje velikosti jen 12 mm.</p>
-            <p>Nejodolnějšími kaktusy vůči nízkým teplotám snášejí mráz až do -35 °C.</p>
-        </article>
-    </section>
+    <div class="container-fluid">
+        <div class="row justify-content-between">
+          <div class="col-4 ml-3">
+            <div class="card bg-primary">
+                <img src="./images/druhy_kaktusu.jpg" class="card-img-top" alt="Druhy kaktusu">
+                <div class="card-body">
+                    <h2 class="card-title">Popis</h2>
+                    <p class="card-text">Kaktusy jsou vytrvalé rostliny s rozmanitým vzhledem.</p>
+                    <p class="card-text">Většina druhů má kulovitý až sloupovitý, nebo zploštělý a veliký stonek.</p>
+                    <p class="card-text">Stonek je na povrchu hrbolatý, žebernatý až křídlatý.</p>
+                    <p class="card-text">Většina druhů kaktusů je bezlistá a listy jsou přeměněny v trny.
+                    <p class="card-text">Některé kaktusy mají stromovitý vzrůst a mohou dosáhnou výšky až 15 metrů.</p>
+                </div>
+            </div>
+          </div>
+          <div class="col-4 mr-3">
+            <div class="card bg-primary">
+                <img src="./images/kaktusy.jpg" class="card-img-top" alt="Kaktusy">
+                <div class="card-body">
+                    <h2 class="card-title">Zajímavosti</h2>
+                    <p class="card-text">Kaktusy zahrnují asi 1900 druhů ve 127 rodech.</p>
+                    <p class="card-text">Největší květy osahují délky a šířky až 30 centimetrů.</p>
+                    <p class="card-text">Nejvyšší druhy sloupcovitých kaktusů mohou dosáhnout výšek až 20 metrů.</p>
+                    <p class="card-text">Nejmenší druh kaktusu dosahuje velikosti jen 12 mm.</p>
+                    <p class="card-text">Nejodolnějšími kaktusy vůči nízkým teplotám snášejí mráz až do -35 °C.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-4">
+            <div class="card bg-primary">
+                <img src="./images/vyskyt_kaktusu.jpg" class="card-img-top" alt="Vyskyt kaktusu">
+                <div class="card-body">
+                    <h2 class="card-title">Výskyt</h2>
+                    <p class="card-text">Kaktusy pocházejí výhradně z Ameriky a vyskytují se od Kanady až po jižní část Jižní Ameriky.</p>
+                    <p class="card-text">Největší počet druhů se vyskytuje v oblasti jihozápadu USA a severozápadu Mexika a také v jihoamerických Andách.</p>
+                    <p class="card-text">Rostou na mnoho různých oblastech od vyprahlých pouští až po tropické deštné lesy.</p>
+                    <p class="card-text">Největší počet je ovšem v suchých, polopouštních oblastech.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <footer>
-        <div class="container">
+    <footer class="bg-primary mt-5">
+        <div class="container text-center">
             <div class="row">
                 <div class="col">
                     <p>František Svatoš</p>
